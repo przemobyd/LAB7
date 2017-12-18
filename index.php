@@ -26,7 +26,6 @@ A {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  cursor: pointer;
   padding: 10px 20px;
   border: 1px solid #018dc4;
   -webkit-border-radius: 5px;
@@ -58,13 +57,12 @@ A {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  cursor: pointer;
   padding: 10px 20px;
   border: 1px solid #018dc4;
   -webkit-border-radius: 7px;
   border-radius: 7px;
   font: normal 16px/normal Verdana, Geneva, sans-serif;
-  color: rgba(255,255,255,0.9);
+  color: rgba(0,0,0,0.9);
   -o-text-overflow: clip;
   text-overflow: clip;
   background: -webkit-linear-gradient(-90deg, rgba(230,240,163,1) 0, rgba(210,230,56,1) 50%, rgba(195,216,37,1) 51%, rgba(219,240,67,1) 100%);
@@ -129,8 +127,8 @@ A {
   text-overflow: ellipsis;
   background: rgba(50,50,50,0.6);
   -webkit-box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.4) ;
-  box-shadow: 1% 1% 2% 2px rgba(0,0,0,0.4) ;
-  margin: 1%;
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.4) ;
+  margin: 1px;
   padding: 10px;
 }
 
@@ -152,9 +150,15 @@ A {
 				<? include("bin/menu.php"); ?>
 			</nav>			
 			<article class="ramka">
-				<? include ("bin/portal.php");?>
+				<? include("bin/portal.php");?>
 			</article>
-			<footer id="STOPKA" class="ramka"><small>Autor: Przemysław Czarnecki TIN 2017/18</small></footer>
+<footer id="STOPKA" class="ramka"><small>Autor: Przemysław Czarnecki TIN 2017/18</small>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Poprawny CSS!" />
+    </a>
+</footer>
 		</div>
 	</body>
 </html>
