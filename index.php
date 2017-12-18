@@ -5,25 +5,16 @@
 		<meta charset="UTF-8">
 		<title>Przemysław Czarnecki</title>
 		<style>
-BODY, HTML {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  border: none;
-  font: normal 100%/normal Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  background: -webkit-linear-gradient(63deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), -webkit-linear-gradient(-117deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), -webkit-linear-gradient(63deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), -webkit-linear-gradient(-117deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), -webkit-linear-gradient(0deg, rgb(27,27,27) 10px, rgba(0,0,0,0) 10px), -webkit-linear-gradient(-90deg, rgb(29,29,29) 25%, rgb(26,26,26) 25%, rgb(26,26,26) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgb(36,36,36) 75%, rgb(36,36,36) 100%), rgb(19, 19, 19);
-  background: -moz-linear-gradient(27deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), -moz-linear-gradient(207deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), -moz-linear-gradient(27deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), -moz-linear-gradient(207deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), -moz-linear-gradient(90deg, rgb(27,27,27) 10px, rgba(0,0,0,0) 10px), -moz-linear-gradient(180deg, rgb(29,29,29) 25%, rgb(26,26,26) 25%, rgb(26,26,26) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgb(36,36,36) 75%, rgb(36,36,36) 100%), rgb(19, 19, 19);
-  background: linear-gradient(27deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), linear-gradient(207deg, rgb(21,21,21) 5px, rgba(0,0,0,0) 5px), linear-gradient(27deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), linear-gradient(207deg, rgb(34,34,34) 5px, rgba(0,0,0,0) 5px), linear-gradient(90deg, rgb(27,27,27) 10px, rgba(0,0,0,0) 10px), linear-gradient(180deg, rgb(29,29,29) 25%, rgb(26,26,26) 25%, rgb(26,26,26) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 75%, rgb(36,36,36) 75%, rgb(36,36,36) 100%), rgb(19, 19, 19);
-  background-position: 0 5px, 10px 0, 0 10px, 10px 5px, 0 0, 0 0;
-  -webkit-background-origin: padding-box;
-  background-origin: padding-box;
-  -webkit-background-clip: border-box;
-  background-clip: border-box;
-  -webkit-background-size: 20px 20px;
-  background-size: 20px 20px;
+HTML { 
+     background: url(img/tlo.jpg) no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     height: 100%;
+     width: 100%;
+     font-family: Helvetica;
+     
 }
 A {
 	color: #fff;
@@ -136,10 +127,10 @@ A {
   color: #fff;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  background: rgb(50,50,50);
+  background: rgba(50,50,50,0.6);
   -webkit-box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.4) ;
   box-shadow: 1% 1% 2% 2px rgba(0,0,0,0.4) ;
-  margin: 3%;
+  margin: 1%;
   padding: 10px;
 }
 
@@ -154,13 +145,15 @@ A {
 	</head>
 	<body>
 <div id="top">
-			<header id="NAGLOWEK" class="ramka"><h1 style="text-align: center;">LAB 7 Programowanie Aplikacji Sieciowych - 8:10 (420 2.2)</h1><small>Przemysław Czarnecki TIN GR1</small></header>
+			<header id="NAGLOWEK" class="ramka" style="text-align: center; font-weight: bold;">
+				LAB 7 Programowanie Aplikacji Sieciowych - 8:10 (420 2.2)
+			</header>
 			<nav id="MENU" class="ramka">
-			<input type="button" class="przycisk" value="Strona Główna" onclick="location.href='/';"/>
+				<? include("bin/menu.php"); ?>
 			</nav>			
-<article class="ramka">
-<? include ("bin/portal.php");?>
-</article>
+			<article class="ramka">
+				<? include ("bin/portal.php");?>
+			</article>
 			<footer id="STOPKA" class="ramka"><small>Autor: Przemysław Czarnecki TIN 2017/18</small></footer>
 		</div>
 	</body>
